@@ -75,7 +75,7 @@ generates the text
 
 ## Supported Units
 
-For more details see [units.js](./addon/units.js).
+For more details see [register-units.js](./addon/register-units.js).
 
 ### Length
 
