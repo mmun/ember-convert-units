@@ -121,6 +121,37 @@ Unit                  | Names
 ----------------------|---------------------------------------
 degrees Fahrenheit    | degrees Fahrenheit, deg F
 degrees Celsius       | degrees Celsius, deg C
+Kelvin                | kelvin
+
+### Speed
+
+Unit                  | Names
+----------------------|---------------------------------------
+Meters per Second     | m/s
+Meters per Hour       | m/h
+Kilometers per Hour   | km/h, kph
+Feet per Second       | ft/s
+Feet per Hour         | ft/h
+Miles per Hour        | mi/h, mph
+
+### Pressure
+
+Unit                  | Names
+----------------------|---------------------------------------
+Nanopascals           | nanopascals, npa
+Micropascals          | micropascals, μpa
+Millipascals          | millipascals, mpa
+Centipascals          | centipascals, cpa
+Pascals               | pascals, pa
+Kilopascals           | kilopascals, kpa
+Nanobars              | nanobars, nbar
+Microbars             | microbars, μbar
+Millibars             | millibars, mbar
+Centibars             | centibars, cbar
+Bars                  | bars, bar
+Kilobars              | kilobars, kbar
+Pounds per Square Inch| psi
+Atmosphere            | atmosphere, at
 
 ### Not currently supported
 
