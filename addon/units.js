@@ -71,6 +71,10 @@ export class Unit {
   static scaleAndOffset(factor, offset, unit) {
     return new AffineScaledUnit(unit, factor, offset);
   }
+  
+  static offsetAndScale(factor, offset, unit) {
+    return Unit.scale(factor,Unit.offset(offset, unit));
+  }
 
   constructor(parent) {
     if (parent) {
