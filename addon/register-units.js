@@ -53,7 +53,7 @@ registerUnit(['kelvin'], kelvin);
 
 let celsius = Unit.offset(273.15, kelvin);
 registerUnit(['degrees Celsius', 'deg C', 'celsius'], celsius);
-registerUnit(['degrees Fahrenheit', 'deg F', 'fahrenheit'], Unit.scaleAndOffset(5/9, -32, celsius));
+registerUnit(['degrees Fahrenheit', 'deg F', 'fahrenheit'], Unit.scaleAndOffset(5/9, 32, celsius));
 
 // Speed
 
@@ -86,7 +86,7 @@ registerUnit(['centibars', 'cbar'], Unit.scale(1e-2, bar));
 registerUnit(['bar','ba'], bar);
 registerUnit(['kilobars', 'kbar'], Unit.scale(1e+3, bar));
 
-let psi = Unit.scale(1.450377e-4, pascals);
+let psi = Unit.scale(6.8948e+3, pascals);
 registerUnit(['psi'], psi);
 
 let atmosphere = Unit.scale(101325, pascals);
