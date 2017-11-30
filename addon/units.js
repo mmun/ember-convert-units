@@ -51,7 +51,7 @@ function _convert(quantity, source, target) {
   } else if (target.depth > source.depth) {
     return target.fromParent(_convert(quantity, source, target.parent));
   } else {
-    return target.fromParent(_convert(source.toParent(quantity), source.parent, target.parent))
+    return target.fromParent(_convert(source.toParent(quantity), source.parent, target.parent));
   }
 }
 

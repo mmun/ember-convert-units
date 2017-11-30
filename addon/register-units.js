@@ -53,11 +53,11 @@ registerUnit(['kelvin'], kelvin);
 
 let celsius = Unit.offset(273.15, kelvin);
 registerUnit(['degrees Celsius', 'deg C', 'celsius'], celsius);
-registerUnit(['degrees Fahrenheit', 'deg F', 'fahrenheit'], Unit.scaleAndOffset(9/5, 32, celsius));
+registerUnit(['degrees Fahrenheit', 'deg F', 'fahrenheit'], Unit.scaleAndOffset(5/9, -32, celsius));
 
 // Speed
 
-let meterspersecond = Unit.root;
+let meterspersecond = Unit.root();
 registerUnit(['m/s'], meterspersecond);
 registerUnit(['m/h'], Unit.scale(3600,meterspersecond));
 registerUnit(['km/s'], Unit.scale(1000,meterspersecond));
