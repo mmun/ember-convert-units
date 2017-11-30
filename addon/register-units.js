@@ -53,9 +53,7 @@ registerUnit(['kelvin'], kelvin);
 
 let celsius = Unit.offset(273.15, kelvin);
 registerUnit(['degrees Celsius', 'deg C', 'celsius'], celsius);
-// registerUnit(['degrees Fahrenheit', 'deg F', 'fahrenheit'], Unit.scaleAndOffset(9/5, -32, celsius));
 registerUnit(['degrees Fahrenheit', 'deg F', 'fahrenheit'], Unit.scaleAndOffset(5/9, -160/9, celsius));
-// registerUnit(['degrees Fahrenheit', 'deg F', 'fahrenheit'], Unit.offsetAndScale(5/9, -32, celsius));
 
 // Speed
 
@@ -65,9 +63,9 @@ registerUnit(['m/h'], Unit.scale(3600,meterspersecond));
 registerUnit(['km/s'], Unit.scale(1000,meterspersecond));
 registerUnit(['km/h','kph'], Unit.scale(3.6,meterspersecond));
 
-let feetpersecond = Unit.scale(3.28084,meterspersecond);
+let feetpersecond = Unit.scale(0.3048,meterspersecond);
 registerUnit(['ft/s'], feetpersecond);
-registerUnit(['ft/h'], Unit.scale(3600,feetpersecond));
+registerUnit(['ft/h'], Unit.scale(2.77778e-4,feetpersecond));
 registerUnit(['mi/h','mph'], Unit.scale(0.681818,feetpersecond));
 
 // Pressure
