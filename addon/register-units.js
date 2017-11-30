@@ -85,7 +85,7 @@ registerUnit(['centibars', 'cbar'], Unit.scale(1e-2, bar));
 registerUnit(['bar','ba'], bar);
 registerUnit(['kilobars', 'kbar'], Unit.scale(1e+3, bar));
 
-let psi = Unit.scale(6.8948e+3, pascals);
+let psi = Unit.scale(6.89476e+3, pascals);
 registerUnit(['psi'], psi);
 
 let atmosphere = Unit.scale(101325, pascals);
