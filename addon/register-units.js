@@ -59,9 +59,8 @@ registerUnit(['degrees Fahrenheit', 'deg F', 'fahrenheit'], Unit.scaleAndOffset(
 
 let meterspersecond = Unit.root();
 registerUnit(['m/s'], meterspersecond);
-registerUnit(['m/h'], Unit.scale(3600,meterspersecond));
-registerUnit(['km/s'], Unit.scale(1000,meterspersecond));
-registerUnit(['km/h','kph'], Unit.scale(3.6,meterspersecond));
+registerUnit(['m/h'], Unit.scale(2.77778e-4,meterspersecond));
+registerUnit(['km/h','kph'], Unit.scale(2.77778e-1,meterspersecond));
 
 let feetpersecond = Unit.scale(0.3048,meterspersecond);
 registerUnit(['ft/s'], feetpersecond);
