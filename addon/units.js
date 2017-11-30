@@ -59,9 +59,13 @@ export class Unit {
   static root() {
     return new Unit();
   }
-
+  
   static scale(factor, unit) {
     return new AffineScaledUnit(unit, factor, 0);
+  }
+
+  static offset(offset, unit) {
+    return new AffineScaledUnit(unit, 1, offset);
   }
 
   static scaleAndOffset(factor, offset, unit) {
