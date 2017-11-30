@@ -54,7 +54,8 @@ registerUnit(['kelvin'], kelvin);
 let celsius = Unit.offset(273.15, kelvin);
 registerUnit(['degrees Celsius', 'deg C', 'celsius'], celsius);
 // registerUnit(['degrees Fahrenheit', 'deg F', 'fahrenheit'], Unit.scaleAndOffset(9/5, -32, celsius));
-registerUnit(['degrees Fahrenheit', 'deg F', 'fahrenheit'], Unit.offsetAndScale(5/9, -32, celsius));
+registerUnit(['degrees Fahrenheit', 'deg F', 'fahrenheit'], Unit.scaleAndOffset(5/9, -160/9, celsius));
+// registerUnit(['degrees Fahrenheit', 'deg F', 'fahrenheit'], Unit.offsetAndScale(5/9, -32, celsius));
 
 // Speed
 
