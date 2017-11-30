@@ -78,7 +78,7 @@ registerUnit(['centipascals', 'cpa'], Unit.scale(1e-2, pascals));
 registerUnit(['pascals', 'pa'], pascals);
 registerUnit(['kilopascals', 'kpa'], Unit.scale(1e+3, pascals));
 
-let bar = Unit.scale(1e-5, pascals);
+let bar = Unit.scale(1e+5, pascals);
 registerUnit(['nanobars', 'nbar'], Unit.scale(1e-9, bar));
 registerUnit(['microbars', 'μbar'], Unit.scale(1e-6, bar));
 registerUnit(['millibars', 'mbar'], Unit.scale(1e-3, bar));
