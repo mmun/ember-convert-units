@@ -59,12 +59,12 @@ registerUnit(['degrees Fahrenheit', 'deg F', 'fahrenheit'], Unit.scaleAndOffset(
 
 let meterspersecond = Unit.root();
 registerUnit(['m/s'], meterspersecond);
-registerUnit(['m/h'], Unit.scale(2.77778e-4,meterspersecond));
-registerUnit(['km/h','kph'], Unit.scale(2.77778e-1,meterspersecond));
+registerUnit(['m/h'], Unit.scale(1/3600,meterspersecond));
+registerUnit(['km/h','kph'], Unit.scale(1/3.6,meterspersecond));
 
 let feetpersecond = Unit.scale(0.3048,meterspersecond);
 registerUnit(['ft/s'], feetpersecond);
-registerUnit(['ft/h'], Unit.scale(2.77778e-4,feetpersecond));
+registerUnit(['ft/h'], Unit.scale(1/3600,feetpersecond));
 registerUnit(['mi/h','mph'], Unit.scale(1.46667,feetpersecond));
 
 // Pressure
