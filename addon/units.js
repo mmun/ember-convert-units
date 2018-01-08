@@ -51,7 +51,7 @@ function _convert(quantity, source, target) {
   } else if (target.depth > source.depth) {
     return target.fromParent(_convert(quantity, source, target.parent));
   } else {
-    return target.fromParent(_convert(source.toParent(quantity), source.parent, target.parent))
+    return target.fromParent(_convert(source.toParent(quantity), source.parent, target.parent));
   }
 }
 
@@ -59,15 +59,19 @@ export class Unit {
   static root() {
     return new Unit();
   }
-
+  
   static scale(factor, unit) {
     return new AffineScaledUnit(unit, factor, 0);
+  }
+
+  static offset(offset, unit) {
+    return new AffineScaledUnit(unit, 1, offset);
   }
 
   static scaleAndOffset(factor, offset, unit) {
     return new AffineScaledUnit(unit, factor, offset);
   }
-
+  
   constructor(parent) {
     if (parent) {
       this.parent = parent;
