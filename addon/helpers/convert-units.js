@@ -1,6 +1,6 @@
-import Ember from 'ember';
+import { helper } from '@ember/component/helper';
 import { convertUnits } from '../index';
 
-export default Ember.Helper.helper((params, hash) => {
+export default helper((params, hash) => {
   return convertUnits(...params, hash);
 });
