@@ -28,7 +28,7 @@ QUnit.extend(QUnit.assert, {
     );
   },
 
-  conversionAlmostEqual(quantity1, unit1, quantity2, unit2, tolerance=1e-10) {
+  conversionAlmostEqual(quantity1, unit1, quantity2, unit2, tolerance = 1e-10) {
     this.ok(
       Math.abs(convertUnits(quantity1, unit1, { to: unit2 }) - quantity2) < tolerance,
       `${quantity1} ${unit1} ~> ${quantity2} ${unit2}`
