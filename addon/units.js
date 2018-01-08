@@ -59,7 +59,7 @@ export class Unit {
   static root() {
     return new Unit();
   }
-  
+
   static scale(factor, unit) {
     return new AffineScaledUnit(unit, factor, 0);
   }
@@ -71,7 +71,7 @@ export class Unit {
   static scaleAndOffset(factor, offset, unit) {
     return new AffineScaledUnit(unit, factor, offset);
   }
-  
+
   constructor(parent) {
     if (parent) {
       this.parent = parent;
