@@ -164,8 +164,8 @@ Gallons               | gallons, gal
 Quart                 | quart, qt
 Pint                  | pint, pt
 Fluid Ounces          | fluid ounces, floz
-Acre Inch             | acre inch, acre in, acre*in, acre*inch
-Acre Foot             | acre foot, acre ft, acre*ft, acre*foot
+Acre Inch             | acre inch, acre in, acre&ast;in, acre&ast;inch
+Acre Foot             | acre foot, acre ft, acre&ast;ft, acre&ast;foot
 
 ### Not currently supported
 
