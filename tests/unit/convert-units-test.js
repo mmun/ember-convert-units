@@ -14,6 +14,8 @@ test(`converts scaled units correctly`, function(assert) {
 
   assert.conversionEqual(2, 'lb', 32, 'oz');
   assert.conversionEqual(2, 'lb', 0.90718474, 'kg');
+  assert.conversionEqual(1, 'ton', 2000, 'lb');
+  assert.conversionEqual(1, 'ton', 32000, 'oz');
 
   assert.conversionEqual(150000, 'ms', 2.5, 'minutes');
   assert.conversionEqual(1, 'l', 1000, 'mL');

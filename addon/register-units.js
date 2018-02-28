@@ -30,11 +30,12 @@ let grams = Unit.root();
 registerUnit(['milligrams', 'mg'], Unit.scale(1e-3, grams));
 registerUnit(['grams', 'g'], grams);
 registerUnit(['kilograms', 'kg'], Unit.scale(1e3, grams));
-registerUnit(['tonnes'], Unit.scale(1e6, grams));
+registerUnit(['tonnes', 'metric-ton'], Unit.scale(1e6, grams));
 
 let ounces = Unit.scale(28.349523125, grams);
 registerUnit(['ounces', 'oz'], ounces);
 registerUnit(['pounds', 'lb'], Unit.scale(16, ounces));
+registerUnit(['ton', 'tons'], Unit.scale(32e3, ounces));
 
 // Time
 
