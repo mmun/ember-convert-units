@@ -93,3 +93,15 @@ registerUnit(['psi'], psi);
 
 let atmosphere = Unit.scale(101325, pascals);
 registerUnit(['atmosphere', 'at'], atmosphere);
+
+// Volume
+
+let liters = Unit.root();
+registerUnit(['litres', 'liters', 'L', 'l'], liters);
+registerUnit(['millilitres', 'milliliters', 'ml', 'mL'], Unit.scale(1e-3, liters));
+registerUnit(['gallons', 'gal'], Unit.scale(3.78541, liters));
+registerUnit(['quart', 'qt'], Unit.scale(0.946353, liters));
+registerUnit(['pint', 'pt'], Unit.scale(0.473176, liters));
+registerUnit(['fluid ounces', 'floz'], Unit.scale(0.0295735, liters));
+registerUnit(['acre inch', 'acre in', 'acre*in', 'acre*inch'], Unit.scale(102790.15461, liters));
+registerUnit(['acre foor', 'acre ft', 'acre*ft', 'acre*foot'], Unit.scale(1233480.22, liters));

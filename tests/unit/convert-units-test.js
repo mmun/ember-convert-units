@@ -16,6 +16,13 @@ test(`converts scaled units correctly`, function(assert) {
   assert.conversionEqual(2, 'lb', 0.90718474, 'kg');
 
   assert.conversionEqual(150000, 'ms', 2.5, 'minutes');
+  assert.conversionEqual(1, 'l', 1000, 'mL');
+  assert.conversionAlmostEqual(1, 'l', 0.26417217685, 'gal');
+  assert.conversionAlmostEqual(1, 'l', 1.05668814913, 'qt');
+  assert.conversionAlmostEqual(1, 'l', 2.11337853145, 'pt');
+  assert.conversionAlmostEqual(1, 'l', 33.8140565032, 'floz');
+  assert.conversionAlmostEqual(1, 'acre*in', 27154.29890289294, 'gal');
+  assert.conversionAlmostEqual(1, 'acre*ft', 325851.15482867113, 'gal');
 
   // Floating point rounding errors
   assert.conversionAlmostEqual(1.3, 'ounces', 36.8543800625, 'g');
