@@ -120,8 +120,8 @@ Hours                 | hours, h
 
 Unit                  | Names
 ----------------------|---------------------------------------
-degrees Fahrenheit    | degrees Fahrenheit, deg F, celsius
-degrees Celsius       | degrees Celsius, deg C, fahrenheit
+degrees Fahrenheit    | degrees Fahrenheit, deg F, fahrenheit
+degrees Celsius       | degrees Celsius, deg C, celsius
 Kelvin                | kelvin
 
 ### Speed
