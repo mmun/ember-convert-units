@@ -100,7 +100,8 @@ Micrograms            | micrograms, μg
 Milligrams            | milligrams, mg
 Grams                 | grams, g
 Killograms            | kilograms, kg
-Tonnes                | tonnes
+Tonnes                | tonnes, metric-ton
+Tons (US)             | ton, tons
 Ounces                | ounces, oz
 Pounds                | pounds, lb
 
@@ -153,10 +154,22 @@ Kilobars              | kilobars, kbar
 Pounds per Square Inch| psi
 Atmosphere            | atmosphere, at
 
+### Volume
+
+Unit                  | Names
+----------------------|---------------------------------------
+Litres                | litres, liters, L, l
+Millilitres           | millilitres, milliliters, ml, mL
+Gallons               | gallons, gal
+Quart                 | quart, qt
+Pint                  | pint, pt
+Fluid Ounces          | fluid ounces, floz
+Acre Inch             | acre inch, acre in, acre*in, acre*inch
+Acre Foot             | acre foot, acre ft, acre*ft, acre*foot
+
 ### Not currently supported
 
 - Area
-- Volume
 - Digital Storage
 - Data Transfer Rate
 
