@@ -30,11 +30,12 @@ let grams = Unit.root();
 registerUnit(['milligrams', 'mg'], Unit.scale(1e-3, grams));
 registerUnit(['grams', 'g'], grams);
 registerUnit(['kilograms', 'kg'], Unit.scale(1e3, grams));
-registerUnit(['tonnes'], Unit.scale(1e6, grams));
+registerUnit(['tonnes', 'metric ton'], Unit.scale(1e6, grams));
 
 let ounces = Unit.scale(28.349523125, grams);
 registerUnit(['ounces', 'oz'], ounces);
 registerUnit(['pounds', 'lb'], Unit.scale(16, ounces));
+registerUnit(['tons', 'ton'], Unit.scale(32e3, ounces));
 
 // Time
 
@@ -93,3 +94,19 @@ registerUnit(['psi'], psi);
 
 let atmosphere = Unit.scale(101325, pascals);
 registerUnit(['atmosphere', 'at'], atmosphere);
+
+// Volume
+
+let liters = Unit.root();
+registerUnit(['millilitres', 'milliliters', 'ml', 'mL'], Unit.scale(1e-3, liters));
+registerUnit(['litres', 'liters', 'L', 'l'], liters);
+
+let fluidOunces = Unit.scale(0.0295735, liters);
+registerUnit(['fluid ounces', 'fl oz'], fluidOunces);
+registerUnit(['pint', 'pt'], Unit.scale(16, fluidOunces));
+registerUnit(['quart', 'qt'], Unit.scale(32, fluidOunces));
+registerUnit(['gallons', 'gal'], Unit.scale(128, fluidOunces));
+
+let gallons = Unit.scale(128, fluidOunces);
+registerUnit(['acre inch', 'acre in', 'acre*in', 'acre*inch'], Unit.scale(27154, gallons));
+registerUnit(['acre foot', 'acre ft', 'acre*ft', 'acre*foot'], Unit.scale(325851, gallons));

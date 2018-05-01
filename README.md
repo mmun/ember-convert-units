@@ -100,7 +100,8 @@ Micrograms            | micrograms, μg
 Milligrams            | milligrams, mg
 Grams                 | grams, g
 Killograms            | kilograms, kg
-Tonnes                | tonnes
+Tonnes                | tonnes, metric ton
+Tons (US)             | tons, ton
 Ounces                | ounces, oz
 Pounds                | pounds, lb
 
@@ -119,8 +120,8 @@ Hours                 | hours, h
 
 Unit                  | Names
 ----------------------|---------------------------------------
-degrees Fahrenheit    | degrees Fahrenheit, deg F, celsius
-degrees Celsius       | degrees Celsius, deg C, fahrenheit
+degrees Fahrenheit    | degrees Fahrenheit, deg F, fahrenheit
+degrees Celsius       | degrees Celsius, deg C, celsius
 Kelvin                | kelvin
 
 ### Speed
@@ -153,10 +154,22 @@ Kilobars              | kilobars, kbar
 Pounds per Square Inch| psi
 Atmosphere            | atmosphere, at
 
+### Volume
+
+Unit                  | Names
+----------------------|---------------------------------------
+Litres                | litres, liters, L, l
+Millilitres           | millilitres, milliliters, ml, mL
+Gallons               | gallons, gal
+Quart                 | quart, qt
+Pint                  | pint, pt
+Fluid Ounces          | fluid ounces, fl oz
+Acre Inch             | acre inch, acre in, acre&ast;in, acre&ast;inch
+Acre Foot             | acre foot, acre ft, acre&ast;ft, acre&ast;foot
+
 ### Not currently supported
 
 - Area
-- Volume
 - Digital Storage
 - Data Transfer Rate
 
