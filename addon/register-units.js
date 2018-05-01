@@ -98,8 +98,8 @@ registerUnit(['atmosphere', 'at'], atmosphere);
 // Volume
 
 let liters = Unit.root();
-registerUnit(['litres', 'liters', 'L', 'l'], liters);
 registerUnit(['millilitres', 'milliliters', 'ml', 'mL'], Unit.scale(1e-3, liters));
+registerUnit(['litres', 'liters', 'L', 'l'], liters);
 
 let fluidOunces = Unit.scale(0.0295735, liters);
 registerUnit(['fluid ounces', 'fl oz'], fluidOunces);
