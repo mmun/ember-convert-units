@@ -100,8 +100,8 @@ Micrograms            | micrograms, μg
 Milligrams            | milligrams, mg
 Grams                 | grams, g
 Killograms            | kilograms, kg
-Tonnes                | tonnes, metric-ton
-Tons (US)             | ton, tons
+Tonnes                | tonnes, metric ton
+Tons (US)             | tons, ton
 Ounces                | ounces, oz
 Pounds                | pounds, lb
 
@@ -163,7 +163,7 @@ Millilitres           | millilitres, milliliters, ml, mL
 Gallons               | gallons, gal
 Quart                 | quart, qt
 Pint                  | pint, pt
-Fluid Ounces          | fluid ounces, floz
+Fluid Ounces          | fluid ounces, fl oz
 Acre Inch             | acre inch, acre in, acre&ast;in, acre&ast;inch
 Acre Foot             | acre foot, acre ft, acre&ast;ft, acre&ast;foot
 
