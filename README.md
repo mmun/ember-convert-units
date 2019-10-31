@@ -92,6 +92,20 @@ Feet                  | feet, ft
 Yards                 | yards, yd
 Miles                 | miles, mi
 
+### Area
+
+Unit                  | Names
+----------------------|---------------------------------------
+Square Millimeters    | square millimetres, square millimeters, sq mm
+Square Centimeters    | square centimetres, square centimeters, sq cm
+Square Meters         | square metres, square meters, sq m
+Hectares              | hectares, ha
+Square Kilometers     | square kilometres, square kilometers, sq km
+Square Inches         | square inches, sq in
+Square Feet           | square feet, sq ft
+Acres                 | acres, acre
+Square Mile           | square mile, sq mi
+
 ### Mass
 
 Unit                  | Names
@@ -169,7 +183,6 @@ Acre Foot             | acre foot, acre ft, acre&ast;ft, acre&ast;foot
 
 ### Not currently supported
 
-- Area
 - Digital Storage
 - Data Transfer Rate
 
