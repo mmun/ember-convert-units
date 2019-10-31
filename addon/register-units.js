@@ -24,6 +24,21 @@ registerUnit(['feet', 'ft'], Unit.scale(12, inches));
 registerUnit(['yards', 'yd'], Unit.scale(36, inches));
 registerUnit(['miles', 'mi'], Unit.scale(63360, inches));
 
+// Area
+
+let squareMeters = Unit.root();
+registerUnit(['square millimetres', 'square millimeters', 'sq mm'], Unit.scale(1e-6, squareMeters));
+registerUnit(['square centimetres', 'square centimeters', 'sq cm'], Unit.scale(1e-4, squareMeters));
+registerUnit(['square metres', 'square meters', 'sq m'], squareMeters);
+registerUnit(['hectares', 'ha'], Unit.scale(1e4, squareMeters));
+registerUnit(['square kilometres', 'square kilometers', 'sq km'], Unit.scale(1e6, squareMeters));
+
+let squareInch = Unit.scale(0.00064516, squareMeters);
+registerUnit(['square inches', 'sq in'], squareInch);
+registerUnit(['square feet', 'sq ft'], Unit.scale(144, squareInch));
+registerUnit(['acres', 'acre'], Unit.scale(6272640, squareInch));
+registerUnit(['square mile', 'sq mi'], Unit.scale(4014489600, squareInch));
+
 // Mass
 
 let grams = Unit.root();

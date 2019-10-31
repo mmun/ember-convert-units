@@ -12,6 +12,16 @@ test(`converts scaled units correctly`, function(assert) {
   assert.conversionEqual(15840, 'ft', 3, 'mi');
   assert.conversionEqual(17600, 'yd', 10, 'mi');
 
+  assert.conversionEqual(2000000, 'sq mm', 2, 'sq m');
+  assert.conversionEqual(2000, 'sq cm', 0.2, 'sq m');
+  assert.conversionEqual(1, 'sq m', 0.0001, 'ha');
+  assert.conversionEqual(123, 'ha', 1.23, 'sq km');
+
+  assert.conversionAlmostEqual(5, 'sq m', 7750.015500031001, 'sq in');
+  assert.conversionEqual(1584, 'sq in', 11, 'sq ft');
+  assert.conversionEqual(21780, 'sq ft', 0.5, 'acre');
+  assert.conversionEqual(1920, 'acre', 3, 'sq mi');
+
   assert.conversionEqual(2, 'lb', 32, 'oz');
   assert.conversionEqual(2, 'lb', 0.90718474, 'kg');
   assert.conversionEqual(1, 'ton', 2000, 'lb');
